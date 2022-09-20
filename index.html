@@ -1,100 +1,125 @@
 <head>
     <link type="text/css" rel="stylesheet" href="gallery-stylesheet.css">
 </head>
-<body> <!--width 1310px, all fonts Arial-->
+<body>
     <header>
-        <h1>TK Photography</h1> <!--40px, #007D7B-->
+        <h1 id="Top">TK Photography</h1>
 
         <nav>
-            <ul id="nav"> <!--20px font size, #FFFFFF, #007D7B on hover-->
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Contact</li>
-                <li>^ top</li> <!--fixed to bottom right of viewport, 20px, bgcolor#007D7B, color#FFFFFF, reversed on hover-->
+            <ul id="nav">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Top">^<br> top</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>About</h1> <!-- main > h1 40px "about"(float right)-->
+        <section id="About">
+            <h1>About</h1>
 
-            <img src="images/TK.png" alt="TK.png" width="850" height="420" id="TK"> <!--TK.png (float left)-->
+            <img src="images/TK.png" alt="TK.png" width="850" id="TK">
 
             <p>Hello!<br>
-            I’m TK and I’m a photographer. I love looking at life through the lens of my camera. 
-            Landscape photography is my speciality and it’s taken me all over the world.</p> <!--float right-->
+            I’m TK and I’m a photographer.<br> I love looking at life through the lens of my camera. 
+            Landscape photography is my speciality and it’s taken me all over the world.</p>
         </section>
 
-        <section> <!-- color="#000000"-->
-            <h1>Gallery</h1> <!-- main > h1 40px "gallery"(float left)-->
+        <section id="Gallery">
+            <h1>Gallery</h1>
 
             <p>Here are some highlights of my work. 
-            The locations and year are in the caption.</p> <!--20px, #000000-->
+            The locations and year are in the caption.</p>
         </section>
         
-        <section> <!-- possible table?-->
+        <section id="photos">
             <div>
                 <figure>
-                    <img src="images/Chile.png" alt="Chile,2001"> <!--HxW??-->
-                    <figcaption>Chile, 2001</figcaption> <!--16px, #000000-->
+                    <img src="images/Chile.png" alt="Chile,2001" class="small">
+                    <figcaption class="TL Black">Chile, 2001</figcaption>
                 </figure>
-                Guatemala.png
-                Guatemala, 1997 <!--16px, #FFFFFF-->
 
-                Hawaii.png
-                Hawaii, 2010 <!--16px, #FFFFFF-->
+                <figure>
+                    <img src="images/Guatemala.png" alt="Guatemala, 1997" class="small">
+                    <figcaption class="TL White">Guatemala, 1997</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Hawaii.png" alt="Hawaii, 2010" class="small">
+                    <figcaption class="BR White">Hawaii, 2010</figcaption>
+                </figure>
             </div>
 
             <div>
-                Iran.png
-                Iran, 1999 <!--16px, #000000-->
-
-                Ireland.png
-                Ireland, 2012 <!--16px, #FFFFFF-->
-
-                Italy.png
-                Italy, 2015 <!--16px, #FFFFFF-->
+                <figure>
+                    <img src="images/Iran.png" alt="Iran, 1999" class="tall">
+                    <figcaption class="TL Black">Iran, 1999</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Ireland.png" alt="Ireland, 2012" class="tall">
+                    <figcaption class="BR White">Ireland, 2012</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Italy.png" alt="Italy, 2015" class="tall">
+                    <figcaption class="BL White">Italy, 2015</figcaption>
+                </figure>
             </div>
 
             <div>
-                Moab-Desert.png
-                Moab Desert, 2020 <!--16px, #FFFFFF-->
-
-                Rocky-Mountains.png
-                Rocky Mountains, 2009 <!--16px, #000000-->
-
-                Switzerland.png
-                Switzerland, 2014 <!--16px, #000000-->
+                <figure>
+                    <img src="images/Moab-Desert.png" alt="Moab Desert, 2020" class="small">
+                    <figcaption class="BR White">Moab Desert, 2020</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Rocky-Mountains.png" alt="Rocky Mountains, 2009" class="small">
+                    <figcaption class="TL Black">Rocky Mountains, 2009</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Switzerland.png" alt="Switzerland, 2014" class="small">
+                    <figcaption class="BL Black">Switzerland, 2014</figcaption>
+                </figure>
             </div>
 
             <div>
-                UK.png
-                UK, 2005 <!--16px, #FFFFFF-->
-
-                USA.png
-                USA, 2021 <!--16px, #FFFFFF-->
-
-                Wyoming.png
-                Wyoming, 2021 <!--16px, #FFFFFF-->
+                <figure>
+                    <img src="images/UK.png" alt="UK, 2005" class="small">
+                    <figcaption class="BR White">UK, 2005</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/USA.png" alt="USA, 2021" class="small">
+                    <figcaption class="TL White">USA, 2021</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Wyoming.png" alt="Wyoming, 2021" class="small">
+                    <figcaption class="TL White">Wyoming, 2021</figcaption>
+                </figure>
             </div>
         </section>
 
     </main>
 
-    <div> <!--width="850"-->
-        <h1>Contact</h1> <!--40px, #FFFFFF-->
+    <section id="Contact">
+        <h1>Contact</h1>
 
-        <p>Please fill out this form and I’ll connect with you soon.</p> <!--20px, #FFFFFF-->
+        <p>Please fill out this form and I’ll connect with you soon.</p>
 
-        Your contact information
-        Name (Your full name)
-        Email (Enter your email address)
-        Message (What can I help you with?)
-        Submit
-    </div>
+        <form>
+            <h2>Your contact information</h2>
+
+            <label for="name">Name</label><br>
+            <input name="name" type="text" placeholder="Your full name"><br>
+            
+            <label for="email">Email</label><br>
+            <input name="email" type="email" placeholder="Enter your email address"><br>
+
+            <label for="message">Message</label><br>
+            <input name="message" type="text" placeholder="What can I help you with?"><br>
+
+            <button type="submit">Submit</button>
+    </section>
 
     <footer>
-        <p>Copyright 2021 TK Photography</p><!--16px, #FFFFFF, centered-->
+        <p>Copyright 2021 TK Photography</p>
     </footer>
 </body>
