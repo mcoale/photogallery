@@ -10,7 +10,7 @@ header {
 
 main {
     width: 1310px;
-    height: 1820px;
+    height: 1840px;
     background-color: #FFFFFF;
     clear: both;
     margin: auto;
@@ -165,6 +165,17 @@ section#contact {
     text-align: center;
 }
 
+form {
+    width: 100%;
+    margin-left: 230px;
+    margin-right: 230px;
+    display: inline-block;
+}
+
+label {
+    margin-left: 10px;
+}
+
 h2 {
     font-size: 40px;
 }
@@ -180,6 +191,8 @@ label {
     color: #FFFFFF;
     font-size: 16px;
     text-align: left;
+    position: relative;
+    bottom: 70px;
 }
 
 input::placeholder {
@@ -204,6 +217,7 @@ button {
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 8px;
+    margin-left: 60px;
 }
 
 footer {
