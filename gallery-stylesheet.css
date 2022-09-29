@@ -4,13 +4,13 @@ body {
 }
 
 header {
-    width: 1310;
+    width: 1310px;
     margin: auto;
 }
 
 main {
-    width: 1310;
-    height: 1820;
+    width: 1310px;
+    height: 1820px;
     background-color: #FFFFFF;
     clear: both;
     margin: auto;
@@ -28,7 +28,7 @@ h1 {
     color:#007D7B;
 }
 
-h1, li {
+h1, h2, li {
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -73,7 +73,7 @@ nav a:visited {
     color: #007D7B;
 }
 
-section#About h1, section#About p {
+section#About h2, section#About p {
     width: 420px;
     float: right;
     padding-right: 20px;
@@ -81,7 +81,7 @@ section#About h1, section#About p {
     text-align: right;
 }
 
-section#About h1 {
+section#About h2 {
     margin: 10px 0 5px 0;
 }
 
@@ -95,17 +95,17 @@ section#About p {
     margin: 10px;
 }
 
-#Gallery h1 {
+#Gallery h2 {
     clear: both;
     margin: 0 20px;
 }
 
 #Gallery p {
-    margin: 10 20px;
+    margin: 10px 20px;
     font-size: 20px;
 }
 
-section#photos div {
+div#photos div {
     margin-left: 7.5px;
     margin-right: 5px;
 }
@@ -160,12 +160,16 @@ figcaption {
 
 section#contact {
     color: #FFFFFF;
-    width: 850;
+    width: 850px;
     margin: auto;
     text-align: center;
 }
 
 h2 {
+    font-size: 40px;
+}
+
+h3 {
     display: none;
 }
 

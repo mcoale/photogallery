@@ -1,5 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link type="text/css" rel="stylesheet" href="gallery-stylesheet.css">
+    <title>Photogallery Coale</title>
 </head>
 <body>
     <header>
@@ -17,7 +20,7 @@
 
     <main>
         <section id="About">
-            <h1>About</h1>
+            <h2>About</h2>
 
             <img src="images/TK.png" alt="TK.png" width="850" id="TK">
 
@@ -27,13 +30,13 @@
         </section>
 
         <section id="Gallery">
-            <h1>Gallery</h1>
+            <h2>Gallery</h2>
 
             <p>Here are some highlights of my work. 
             The locations and year are in the caption.</p>
         </section>
         
-        <section id="photos">
+        <div id="photos">
             <div>
                 <figure>
                     <img src="images/Chile.png" alt="Chile,2001" class="small">
@@ -95,31 +98,33 @@
                     <figcaption class="TL White">Wyoming, 2021</figcaption>
                 </figure>
             </div>
-        </section>
+        </div>
 
     </main>
 
     <section id="Contact">
-        <h1>Contact</h1>
+        <h2>Contact</h2>
 
         <p>Please fill out this form and I’ll connect with you soon.</p>
 
         <form>
-            <h2>Your contact information</h2>
+            <h3>Your contact information</h3>
 
+            <input name="name" id="name" type="text" placeholder="Your full name"><br>
             <label for="name">Name</label><br>
-            <input name="name" type="text" placeholder="Your full name"><br>
             
+            <input name="email" id="email" type="email" placeholder="Enter your email address"><br>
             <label for="email">Email</label><br>
-            <input name="email" type="email" placeholder="Enter your email address"><br>
 
+            <input name="message" id="message" type="text" placeholder="What can I help you with?"><br>
             <label for="message">Message</label><br>
-            <input name="message" type="text" placeholder="What can I help you with?"><br>
 
             <button type="submit">Submit</button>
+            </form>
     </section>
 
     <footer>
         <p>Copyright 2021 TK Photography</p>
     </footer>
 </body>
+</html>
